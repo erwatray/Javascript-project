@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2)
+    format("woff2");
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC,
+    U+A830-A839, U+A8E0-A8FF;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(136, 110, 44);
+}
+
+.wrapper {
+  width: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper .content {
+  margin: 25px 25px 35px;
+}
+
+.content .typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+}
+
+.content .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs input {
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  color: goldenrod;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  background-color: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: 1px solid #b5b5b5;
+}
+
+.inputs input:first-child {
+  margin-left: 0px;
+}
+
+.content .details {
+  margin: 20px 0 25px;
+}
+
+.details p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.content .reset-btn {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: goldenrod;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper h1 {
+    font-size: 22px;
+    padding: 16px 20px;
+  }
+  .wrapper .content {
+    margin: 25px 20px 35px;
+  }
+  .inputs input {
+    height: 51px;
+    width: 50px;
+    margin: 3px;
+    font-size: 22px;
+  }
+  .details p {
+    font-size: 17px;
+  }
+  .content .reset-btn {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
