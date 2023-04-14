@@ -10,7 +10,11 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
     />
 
-    <title>Document</title>
+    <link rel="manifest" href="manifest.json" />
+    <script>
+      navigator.serviceWorker.register("service-worker.js");
+    </script>
+    <title>Word Guessing Game</title>
   </head>
   <body>
     <div class="wrapper">
